@@ -127,7 +127,7 @@ async def start_pm(client, message: Message, _):
             chat_photo = userss_photo
         chat_photo = userss_photo if userss_photo else START_IMG_URL
 
-        except AttributeError:
+    except AttributeError:
             chat_photo = "assets/nodp.png"
         await lols.delete()
         await m.delete()

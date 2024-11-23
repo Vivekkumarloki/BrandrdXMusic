@@ -143,7 +143,7 @@ async def start_pm(client, message: Message, _):
 
         except AttributeError:
             chat_photo = "assets/nodp.png"
-        await lols.delete()
+        await vips.delete()
         await message.reply_photo(
             photo=chat_photo,
             caption=_["start_2"].format(message.from_user.mention, app.mention),
@@ -154,9 +154,8 @@ async def start_pm(client, message: Message, _):
             sender_name = message.from_user.first_name
             return await app.send_message(
                 config.LOG_GROUP_ID,
-                f"{message.from_user.mention} ʜᴀs sᴛᴀʀᴛᴇᴅ ʙᴏᴛ. \n\nᴜsᴇʀ ɪᴅ : {sender_id}\nᴜsᴇʀ ɴᴀᴍᴇ: {sender_name}",
-            )       
-
+                f"{message.from_user.mention} ʜᴀs sᴛᴀʀᴛᴇᴅ ʙᴏᴛ. \n\n**ᴜsᴇʀ ɪᴅ :** {sender_id}\n**ᴜsᴇʀ ɴᴀᴍᴇ:** {sender_name}",
+            )
 
 @app.on_message(filters.command(["start"]) & filters.group & ~BANNED_USERS)
 @LanguageStart

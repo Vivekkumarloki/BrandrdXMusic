@@ -93,7 +93,7 @@ async def start_pm(client, message: Message, _):
         await lol.edit_text("𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐚𝐛𝐲 ꨄ {}.. 💞".format(message.from_user.mention))
                
         await lol.delete()
-        lol = await message.reply_text("**⚡️ѕ**")
+        lols = await message.reply_text("**⚡️ѕ**")
         await asyncio.sleep(0.1)
         await lols.edit_text("⚡ѕт")        
         await asyncio.sleep(0.1)

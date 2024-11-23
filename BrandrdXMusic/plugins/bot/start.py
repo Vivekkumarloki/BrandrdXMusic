@@ -85,6 +85,13 @@ async def start_pm(client, message: Message, _):
                 )
     else:
         out = private_panel(_)
+        lol = await message.reply_text(f"**𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐚𝐛𝐲 ꨄ︎ {message.from_user.mention}❣️**")
+            await lol.edit_text(f"**𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐚𝐛𝐲 ꨄ︎ {message.from_user.mention}..🥳**")
+            await lol.edit_text(f"**𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐚𝐛𝐲 ꨄ︎ {message.from_user.mention}...💥**")
+            await lol.edit_text(f"**𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐚𝐛𝐲 ꨄ︎ {message.from_user.mention}....🤩**")
+            await lol.edit_text(f"**𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐚𝐛𝐲 ꨄ︎ {message.from_user.mention}.....💌**")
+            await lol.edit_text(f"**𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐚𝐛𝐲 ꨄ︎ {message.from_user.mention}......💞**")
+        
         lol = await message.reply_text("Pʟᴇᴀsᴇ Wᴀɪᴛɪɴɢ...")
         await asyncio.sleep(0.5)
         await lol.edit("ꜱᴛᴀʀᴛɪɴɢ....")

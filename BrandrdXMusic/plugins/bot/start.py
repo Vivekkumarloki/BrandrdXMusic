@@ -91,11 +91,12 @@ async def start_pm(client, message: Message, _):
         await lol.edit_text("𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐚𝐛𝐲 ꨄ {}.. 🤩".format(message.from_user.mention))
         await lol.edit_text("𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐚𝐛𝐲 ꨄ {}.. 💌".format(message.from_user.mention))
         await lol.edit_text("𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐚𝐛𝐲 ꨄ {}.. 💞".format(message.from_user.mention))
-        
-        lol = await message.reply_text("Pʟᴇᴀsᴇ Wᴀɪᴛɪɴɢ...")
-        await asyncio.sleep(0.5)
-        await lol.edit("ꜱᴛᴀʀᴛɪɴɢ....")
-        await asyncio.sleep(0.3)
+               
+        await lol.delete()
+        lol = await message.reply_text("**⚡️ѕ**")
+        await asyncio.sleep(0.1)
+        await lols.edit_text("⚡ѕт")        
+        await asyncio.sleep(0.1)
         await lol.edit("Wᴇʟᴄᴏᴍᴇ ᴛᴏ BʀᴀɴᴅʀᴅXMᴜsɪᴄ.....")
         await asyncio.sleep(0.4)
         m = await message.reply_sticker("CAACAgUAAxkBAAEQI1BlTLmx7PtOO3aPNshEU2gCy7iAFgACNQUAApqMuVeA6eJ50VbvmDME")

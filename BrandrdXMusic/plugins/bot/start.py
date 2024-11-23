@@ -129,7 +129,6 @@ async def start_pm(client, message: Message, _):
 
         except AttributeError:
             chat_photo = "assets/nodp.png"
-        
         await lols.delete()
         await m.delete()
         await asyncio.sleep(0.2)
